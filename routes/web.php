@@ -23,6 +23,10 @@ Route::get('/teacher', function () {
     return view('welcomeTeacher');
 });
 
+Route::get('/teacher/level', function () {
+    return view('pages.levelTeacher');
+});
+
 Route::get('/level', 'LevelsController@index');
 Route::get('/register', 'LevelsController@index');
 
