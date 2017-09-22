@@ -18,7 +18,7 @@
             <div class="card-block">
                 <h3 class="card-title">Level 0</h3>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">View Rules</a>
+                <a href="/level" class="btn btn-primary">View Rules</a>
             </div>
             </div>
         </div>
