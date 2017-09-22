@@ -14,4 +14,9 @@ class LevelsController extends Controller
         return view('pages.level')->with('activity', $act);
     }
 
+    public function searchByLevel($level){
+        $act = Activities::where('level', $level)->get();
+        return view('pages.level')->with('activity', $act);
+    }
+
 }
