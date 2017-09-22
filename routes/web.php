@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/level', function () {
-    return view('pages.level');
-});
+// Route::get('/level', function () {
+//     return view('pages.level');
+// });
+
+Route::get('search/', 'LevelsController@index');
