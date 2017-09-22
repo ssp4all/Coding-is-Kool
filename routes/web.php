@@ -21,3 +21,8 @@ Route::get('/level', function () {
 Route::get('/leaderboard', function () {
     return view('pages.leaderboard');
 });
+
+
+Route::get('/teacher', function () {
+    return view('welcomeTeacher');
+});
