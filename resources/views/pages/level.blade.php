@@ -33,7 +33,7 @@
                     <div class="collapse" id="collapseLearn{{$act->id}}">
                         <div class="card card-block">
                             <ol>
-                                <li>{{$act->learning_path}}</li>
+                                <a href="{{$act->learning_path}}">{{$act->learning_path}}</a>
                             </ol>
                         </div>
                     </div>
