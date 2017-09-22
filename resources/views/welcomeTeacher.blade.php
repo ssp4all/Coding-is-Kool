@@ -1,0 +1,125 @@
+@extends('layouts.navbar')
+
+@section('content')
+
+<div class="container py-4">
+    <h3>Activites to be assessed</h3>
+</div>
+
+
+<div class="container">
+
+    <div class="row py-2">
+            
+        <div class="card" style="width: 80%;">
+        <div class="card-header">
+            Activity 1
+        </div>
+        <div class="card-block">
+            <h4 class="card-title">Basic Programming Knowledge</h4>
+            <p class="card-text">Basic knowledge of variables, operations, loops, conditions, etc.</p>
+            <a class="btn btn-secondary" data-toggle="collapse" href="#collapseLearn0" aria-expanded="false" aria-controls="collapseExample">
+                Learning Paths
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseLearn0" aria-expanded="false" aria-controls="collapseExample">
+                Grade Students
+            </a>
+        </div>
+
+        <div class="collapse" id="collapseLearn0">
+            <div class="card card-block">
+                <ol>
+                    <li>Study link 1</li>
+                    <li>Study link 2</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card-footer bg-success text-muted">
+        </div>
+    </div>
+</div>
+
+<div class="container py-4">
+    <h3>Upcoming Activities</h3>
+</div>
+
+
+<div class="container">
+
+    <div class="row py-2">
+            
+        <div class="card" style="width: 80%;">
+        <div class="card-header">
+            Activity 1
+        </div>
+        <div class="card-block">
+            <h4 class="card-title">Basic Programming Knowledge</h4>
+            <p class="card-text">Basic knowledge of variables, operations, loops, conditions, etc.</p>
+            <a class="btn btn-secondary" data-toggle="collapse" href="#collapseLearn0" aria-expanded="false" aria-controls="collapseExample">
+                Learning Paths
+            </a>
+        </div>
+
+        <div class="collapse" id="collapseLearn0">
+            <div class="card card-block">
+                <ol>
+                    <li>Study link 1</li>
+                    <li>Study link 2</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card-footer bg-success text-muted">
+        </div>
+    </div>
+</div>
+
+<div class="container py-4">
+    <h3>Take a new Activity</h3>
+</div>
+
+<div class="container">
+
+    <div class="row py-2">
+            
+        <div class="col-sm-3 py-1">
+            <div class="card">
+            <div class="card-block">
+                <h3 class="card-title">Level 0</h3>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="/level" class="btn btn-primary">View Rules</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 py-1">
+            <div class="card">
+            <div class="card-block">
+                <h3 class="card-title">Level 1</h3>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="/level" class="btn btn-primary">View Rules</a>
+            </div>
+            </div>
+        </div>
+            
+        <div class="col-sm-3 py-1">
+            <div class="card">
+            <div class="card-block">
+                <h3 class="card-title">Level 2</h3>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View Rules</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 py-1">
+            <div class="card">
+            <div class="card-block">
+                <h3 class="card-title">Level 3</h3>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View Rules</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
