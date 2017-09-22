@@ -91,7 +91,7 @@
                 <div class="card-block">
                     <h3 class="card-title">Level 0</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="/teacher/level" class="btn btn-primary">View Activites</a>
+                    <a href="/teacher/level/0" class="btn btn-primary">View Activites</a>
                 </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                 <div class="card-block">
                     <h3 class="card-title">Level 1</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="teacher/level" class="btn btn-primary">View Activites</a>
+                    <a href="teacher/level/1" class="btn btn-primary">View Activites</a>
                 </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                 <div class="card-block">
                     <h3 class="card-title">Level 2</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">View Activites</a>
+                    <a href="teacher/level/2" class="btn btn-primary">View Activites</a>
                 </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                 <div class="card-block">
                     <h3 class="card-title">Level 3</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">View Activites</a>
+                    <a href="teacher/level/3" class="btn btn-primary">View Activites</a>
                 </div>
                 </div>
             </div>

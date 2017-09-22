@@ -23,10 +23,10 @@ Route::get('/teacher', function () {
     return view('welcomeTeacher');
 });
 
-Route::get('/teacher/level', function () {
-    return view('pages.levelTeacher');
-});
+Route::get('/teacher/level/{id}', 'RegistrationController@index');
 
 Route::get('/level', 'LevelsController@index');
 
 Route::get('/level/{level}', 'LevelsController@searchByLevel');
+
+Route::post('/teacher/level/add', 'RegistrationController@registerStudents')->name('teacher.register');

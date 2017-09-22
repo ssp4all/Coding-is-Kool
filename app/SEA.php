@@ -17,4 +17,6 @@ class SEA extends Model
     public function faculty(){
         return $this->belongsTo('App\Faculty');
     }
+
+    protected $fillable = ["activity_id", "faculty_id", "class", "date", "time", "isactive"];
 }
