@@ -20,7 +20,7 @@
                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapseLearn0" aria-expanded="false" aria-controls="collapseExample">
                     Learning Paths
                 </a>
-                <a href="#" class="btn btn-primary">
+                <a href="teacher/grade" class="btn btn-primary">
                     Grade It!
                 </a>
             </div>

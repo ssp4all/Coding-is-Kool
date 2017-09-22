@@ -27,6 +27,10 @@ Route::get('/teacher/level', function () {
     return view('pages.levelTeacher');
 });
 
+Route::get('/teacher/grade', function () {
+    return view('pages.gradeMe');
+});
+
 Route::get('/level', 'LevelsController@index');
 
 Route::get('/level/{level}', 'LevelsController@searchByLevel');
