@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/level', function () {
     return view('pages.level');
 });
+Route::get('/leaderboard', function () {
+    return view('pages.leaderboard');
+});

@@ -20,7 +20,7 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Leaderboard</a>
+                <a class="nav-link" href="/leaderboard">Leaderboard</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Logout</a>
