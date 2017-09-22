@@ -32,5 +32,7 @@ Route::get('/teacher/grade', function () {
 });
 
 Route::get('/level', 'LevelsController@index');
+Route::get('/register', 'LevelsController@index');
 
 Route::get('/level/{level}', 'LevelsController@searchByLevel');
+Route::get('/register/{activityNumber}', 'LevelsController@register');
