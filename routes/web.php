@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::get('/level', function () {
     return view('pages.level');
 });
+
+
+Route::get('/teacher', function () {
+    return view('welcomeTeacher');
+});
