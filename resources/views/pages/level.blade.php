@@ -14,7 +14,7 @@
                         
                         <p class="card-text">Maximum Marks: {{$act->max}}</p>
                         
-                        <p class="card-text">Minimum Marks: {{$act->min}}</p>
+                        <p class="card-text">Passing Marks: {{$act->passing}}</p>
                         
                         @if($act->isonline == 1)
                             <p class="card-text">Exam Type: Online</p>   
