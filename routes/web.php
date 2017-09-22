@@ -27,4 +27,6 @@ Route::get('/teacher', function () {
     return view('welcomeTeacher');
 });
 
-Route::get('search/', 'LevelsController@index');
+Route::get('/search', 'LevelsController@index');
+
+Route::get('/search/{level}', 'LevelsController@searchByLevel');
