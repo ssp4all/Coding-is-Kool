@@ -14,10 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/level', function () {
-    return view('pages.level');
-});
 Route::get('/leaderboard', function () {
     return view('pages.leaderboard');
 });
@@ -27,6 +23,6 @@ Route::get('/teacher', function () {
     return view('welcomeTeacher');
 });
 
-Route::get('/search', 'LevelsController@index');
+Route::get('/level', 'LevelsController@index');
 
-Route::get('/search/{level}', 'LevelsController@searchByLevel');
+Route::get('/level/{level}', 'LevelsController@searchByLevel');
