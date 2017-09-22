@@ -18,7 +18,7 @@
             <div class="card-block">
                 <h3 class="card-title">Level 0</h3>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="{{ action("LevelsController@index") }}" class="btn btn-primary">View Rules</a>
+                <a href="/level/0" class="btn btn-primary">View Rules</a>
             </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                         <div class="card-block">
                             <h4 class="card-title">Level 1</h4>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go to Test</a>
+                            <a href="/level/1" class="btn btn-primary">Go to Test</a>
                         </div>
                         <div class="card-footer text-muted">
                             2 days ago
@@ -45,7 +45,7 @@
                 <div class="card-block">
                   <h3 class="card-title">Level 2</h3>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">View Rules</a>
+                  <a href="/level/2" class="btn btn-primary">View Rules</a>
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@
                 <div class="card-block">
                   <h3 class="card-title">Level 3</h3>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">View Rules</a>
+                  <a href="/level/3" class="btn btn-primary">View Rules</a>
                 </div>
               </div>
             </div>
