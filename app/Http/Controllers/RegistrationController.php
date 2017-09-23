@@ -52,7 +52,17 @@ class RegistrationController extends Controller
     }
 
     public function gradeStudents($sea_id){
-        return view('pages.gradeMe');
+        $current_tests = Current_test::where('sea_id', $sea_id)->get();
+        $sea = SEA::where('sea_id', $sea_id)->first();
+        $activity = $sea->activity;
+        $students = [];
+        foreach($current_tests as $current_test){
+            array_push($students, $current_test->student);
+        }
+
+        return view('pages.gradeMe')->with(['students' => $students, 
+                                            'sea' => $sea,
+                                            'activity' => $activity]);
     }
 
 }
