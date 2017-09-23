@@ -11,13 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/student', function () {
     return view('welcome');
 });
 Route::get('/leaderboard', function () {
     return view('pages.leaderboard');
 });
 
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/teacher', 'RegistrationController@getCurrentActivities');
 
