@@ -73,13 +73,22 @@ class RegistrationController extends Controller
         $markEntry = [];
         $i = 0;
         foreach($studentIds as $studentId){
-            array_push($markEntry, [
+
+            $markEntry = array(
                 'stud_id' => $studentId,
                 'marks' => $marks[$i],
                 'act_id' => $request->activity_id,
                 'sea_id' => $request->sea_id,
                 'ol_id' => $request->ol_id,
-            ]);
+            );
+
+            // array_push($markEntry, [
+            //     'stud_id' => $studentId,
+            //     'marks' => $marks[$i],
+            //     'act_id' => $request->activity_id,
+            //     'sea_id' => $request->sea_id,
+            //     'ol_id' => $request->ol_id,
+            // ]);
             $i++;
         }
         Marks::insert($markEntry);

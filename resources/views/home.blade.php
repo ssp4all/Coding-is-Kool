@@ -18,13 +18,13 @@
             <div class="container text-center">
                 <h1 class="display-4 text-white">Welcome to Coding's Kool</h1>
 
-                <a href="/student" class="btn btn-success">Sign in as Student</a>
+                <a href="/login" class="btn btn-success">Sign in as Student</a>
                 <a href="/teacher" class="btn btn-success">Sign in as Moderator</a>
             </div>
 
         </div>
 
-        <br><br><br>
+            <br><br><br>
 
         <!-- About Section -->
         <section class="success" id="about">

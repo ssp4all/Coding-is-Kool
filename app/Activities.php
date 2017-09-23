@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Activities extends Model
 {
 	protected $table = 'activity';
-    protected $primarykey = 'id';
+    protected $primaryKey = 'id';
     public $timestamps = false;
 
     public function SEAs(){
