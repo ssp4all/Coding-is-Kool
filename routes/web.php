@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/student', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/leaderboard', function () {
@@ -34,4 +34,4 @@ Route::get('/level/{level}', 'LevelsController@searchByLevel');
 Route::post('/teacher/level/add', 'RegistrationController@registerStudents')->name('teacher.register');
 Route::get('/register/{activityNumber}', 'LevelsController@register');
 
-Route::get('/', 'OauthController@login');
+Route::get('/login', 'OauthController@login');
