@@ -7,6 +7,7 @@ use App\Activities;
 use App\SEA;
 use App\Current_registration;
 use App\Current_test;
+use App\Marks;
 
 class RegistrationController extends Controller
 {
@@ -32,7 +33,7 @@ class RegistrationController extends Controller
         foreach($registrations as $registration){
             array_push($finalRegistration, [
                 'stud_id' => $registration->stud_id,
-                'sea_id' => $sea->id
+                'sea_id' => $sea->sea_id
             ]);
         }
 
@@ -63,6 +64,28 @@ class RegistrationController extends Controller
         return view('pages.gradeMe')->with(['students' => $students, 
                                             'sea' => $sea,
                                             'activity' => $activity]);
+    }
+
+    public function updateMarks(Request $request){
+        $studentIds = $request->uid;
+        $marks = $request->marks;
+
+        $markEntry = [];
+        $i = 0;
+        foreach($studentIds as $studentId){
+            array_push($markEntry, [
+                'stud_id' => $studentId,
+                'marks' => $marks[$i],
+                'act_id' => $request->activity_id,
+                'sea_id' => $request->sea_id,
+                'ol_id' => $request->ol_id,
+            ]);
+            $i++;
+        }
+        Marks::insert($markEntry);
+        $sea = SEA::where('sea_id', $request->sea_id)->first();
+        $sea->delete();
+        return $this->getCurrentActivities();
     }
 
 }

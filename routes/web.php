@@ -24,6 +24,7 @@ Route::get('/teacher', 'RegistrationController@getCurrentActivities');
 Route::get('/teacher/level/{id}', 'RegistrationController@index');
 
 Route::get('/teacher/grade/{sea_id}', 'RegistrationController@gradeStudents');
+Route::post('/teacher/grade', 'RegistrationController@updateMarks')->name('teacher.addMarks');
 
 Route::get('/level', 'LevelsController@index');
 Route::get('/register', 'LevelsController@index');
