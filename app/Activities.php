@@ -11,6 +11,6 @@ class Activities extends Model
     public $timestamps = false;
 
     public function SEAs(){
-        return $this->hasMany('App\SEA');
+        return $this->hasMany('App\SEA',  'activity_id', 'id');
     }
 }

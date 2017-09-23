@@ -39,7 +39,20 @@ class RegistrationController extends Controller
         Current_test::insert($finalRegistration);
 
 
-        return view('welcomeTeacher');
+        return $this->getCurrentActivities();
+    }
+
+    public function getCurrentActivities(){
+        $seas = SEA::where('isactive', true)->get();
+        foreach($seas as $sea){
+            $sea->activity;
+            $sea->faculty;
+        }
+        return view('welcomeTeacher')->with('seas', $seas);
+    }
+
+    public function gradeStudents($sea_id){
+        return view('pages.gradeMe');
     }
 
 }

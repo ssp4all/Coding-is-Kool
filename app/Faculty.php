@@ -11,6 +11,6 @@ class Faculty extends Model
     public $timestamps = false;
 
     public function SEAs(){
-        return $this->hasMany('App\SEA');
+        return $this->hasMany('App\SEA', 'faculty_id', 'id');
     }
 }

@@ -19,15 +19,11 @@ Route::get('/leaderboard', function () {
 });
 
 
-Route::get('/teacher', function () {
-    return view('welcomeTeacher');
-});
+Route::get('/teacher', 'RegistrationController@getCurrentActivities');
 
 Route::get('/teacher/level/{id}', 'RegistrationController@index');
 
-Route::get('/teacher/grade', function () {
-    return view('pages.gradeMe');
-});
+Route::get('/teacher/grade/{sea_id}', 'RegistrationController@gradeStudents');
 
 Route::get('/level', 'LevelsController@index');
 Route::get('/register', 'LevelsController@index');

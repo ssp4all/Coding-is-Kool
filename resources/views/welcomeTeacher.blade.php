@@ -8,35 +8,37 @@
 
 <div class="container">
 
-    <div class="row py-2">
-            
-        <div class="card" style="width: 80%;">
-            <div class="card-header">
-                Activity 1
-            </div>
-            <div class="card-block">
-                <h4 class="card-title">Basic Programming Knowledge</h4>
-                <p class="card-text">Basic knowledge of variables, operations, loops, conditions, etc.</p>
-                <a class="btn btn-secondary" data-toggle="collapse" href="#collapseLearn0" aria-expanded="false" aria-controls="collapseExample">
-                    Learning Paths
-                </a>
-                <a href="teacher/grade" class="btn btn-primary">
-                    Grade It!
-                </a>
-            </div>
+        @foreach($seas as $sea)
+        <div class="row py-2">
+                
+            <div class="card" style="width: 80%;">
+                <div class="card-header">
+                    {{$sea->activity->name}}
+                </div>
+                <div class="card-block">
+                    <h4 class="card-title">{{$sea->activity->name}}</h4>
+                    <p class="card-text">{{$sea->activity->description}}</p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapseLearn{{$sea->sea_id}}" aria-expanded="false" aria-controls="collapseExample">
+                        Learning Paths
+                    </a>
+                    <a href="teacher/grade/{{$sea->sea_id}}" class="btn btn-primary">
+                        Grade It!
+                    </a>
+                </div>
 
-            <div class="collapse" id="collapseLearn0">
-                <div class="card card-block">
-                    <ol>
-                        <li>Study link 1</li>
-                        <li>Study link 2</li>
-                    </ol>
+                <div class="collapse" id="collapseLearn{{$sea->sea_id}}">
+                    <div class="card card-block">
+                        <ol>
+                            {{$sea->activity->learning_path}}
+                        </ol>
+                    </div>
+                </div>
+                <div class="card-footer bg-success text-muted">
                 </div>
             </div>
-            <div class="card-footer bg-success text-muted">
-            </div>
-     </div>
-    </div>
+    
+        </div>
+        @endforeach
 </div>
 
 <hr>
